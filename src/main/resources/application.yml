@@ -1,0 +1,20 @@
+#DELETE OS '<>' (E O QUE ESTIVER DENTRO) E COLOQUE OS SEUS VALORES PERSONALIZADOS
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:<sua-porta>/<nome-do-db>
+    username: postgres
+    password: <sua-senha>
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 969420272985-1ntss7lai4ss4493u33b32e5s7sc261u.apps.googleusercontent.com
+            client-secret: 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
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
